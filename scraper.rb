@@ -6,7 +6,6 @@ names = EveryPolitician::Wikidata.wikipedia_xpath(
   after: '//h2/span[@id="Open_Electorates"]',
   before: '//h2/span[@id="See_also"]',
   xpath: '//table//td[2]//a[not(@class="new")]/@title',
-  debug: true,
 ) 
 
 EveryPolitician::Wikidata.scrape_wikidata(names: { en: names }, output: false)
